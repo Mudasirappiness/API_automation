@@ -1,0 +1,10 @@
+2025-02-18 15:22:20 INFO Passing the end point
+2025-02-18 15:22:20 INFO Successfully done - Testcase 1.1 is passed
+2025-02-18 15:22:20 INFO Passing the required data to create the idea
+2025-02-18 15:22:20 INFO Successfully done - Testcase 1.2 is passed
+2025-02-18 15:22:20 INFO Validating the status code
+2025-02-18 15:22:20 INFO Successfully done - Testcase 1.3 is passed
+2025-02-18 15:22:20 INFO Validating the Method 
+2025-02-18 15:22:20 INFO Successfully done - Testcase 1.4 is passed
+2025-02-18 15:22:20 INFO Validating the JSON data
+2025-02-18 15:22:20 INFO Successfully done - Testcase 1.5 is passed

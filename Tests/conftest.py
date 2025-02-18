@@ -61,15 +61,19 @@ def stage_admin_user():
 	yield session
 	session.close()
 
-# @pytest.fixture
-# def stage_service_user():
-# 	session = requests.session()
-# 	session.base_url = "https://bwbeddev.buildingworld.com"
-# 	session.headers.update(
-# 		{
-# 			'X-Session' :
-# 		}
-# 	)
+
+@pytest.fixture
+def stage_brand_user():
+	session = requests.session()
+	session.base_url = "https://bwbeddev.buildingworld.com"
+	session.headers.update(
+		{
+			'X-Session' : 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhaSI6ImdBQUFBQUJudEUzSGluMEN2cDRwVkVBd2F6c2o4ZWo5Vnc5R05yS2Mzb3RJOUFwbXhIcHp3SUdCQXlib1RFckh0SFR3bndPNWJYWEJhZ3JwcnZ5SHU1U1pER0JJaHpTc3lRPT0iLCJtb2JpbGVfbnVtYmVyIjoiZ0FBQUFBQm50RTNIM3JDMklYQ2E1SV8xZXE3N1NBd19rTXZFN3ExQndlZWZYUGYxTmR4T1VlTjFBY3pfdUJwTmk3Mm1adlZfMklINV9MUXpsSjA3bzg1U1I0cXA2ZWhHdGc9PSIsImVtYWlsX2lkIjoiZ0FBQUFBQm50RTNIZ1hrWXg4ZDZYOXlzVnhOUGVFRU13ZkljSzBmTXA2T2Jpd1QtZV9OY2FxVUVuTDdZb29VRFRSR2Z0OExpWXBXRXE5b09waFMwRlVMMDJSUk8zVWF1UGZpYWd3MXdMUU5RQkdqNG5vaC1zRHc9IiwiaXNfdXNlciI6dHJ1ZX0.Zlh62QxjDDdEy8c_-FZVTJun7VDE3yklSYWyly6VDik',
+			'Content -Type' : 'application/json',
+		}
+	)
+	yield session
+	session.close()
 
 
 
